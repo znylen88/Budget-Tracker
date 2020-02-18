@@ -1,1 +1,39 @@
-/* add css here */
+nav {
+    height: 75px;
+    background-color: rgb(27, 75, 107);
+}
+
+#logo {
+    margin-top: 5px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.total {
+    text-align: center;
+    font-size: 30px;
+}
+
+#t-name {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#t-amount {
+    text-align: center;
+}
+
+.card {
+    margin-top: 30px;
+    background-color: lightgray; 
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}

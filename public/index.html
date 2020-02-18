@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#317EFB">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css">
 
   <link rel="manifest" href="/manifest.json">
 
   <title>Budget Tracker</title>
 </head>
+
 <body>
-  <div class="wrapper">
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo center" id="logo"><i class="far fa-money-bill-alt fa-2x"></i></a>
+    </div>
+  </nav>
+  <div class="container">
     <div class="total">
       <div class="total">Your total is: $<span id="total">0</span></div>
     </div>
 
     <div class="form">
-      <input type="text" id="t-name" placeholder="Name of transaction" />
-      <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
-      <p class="error"></p>
+      <input type="text" id="t-name" placeholder="Name of Transaction" />
+      <input type="number" min="0" id="t-amount" placeholder="Transaction Amount" />
+      <br>
+      <br>
+      <div class="center">
+        <a class="waves-effect waves-light green btn-large" id="add-btn"><i
+            class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp;Add
+          Funds</a>
+        <a class="waves-effect waves-light red btn-large" id="sub-btn"><i
+            class="fas fa-minus"></i>&nbsp;&nbsp;&nbsp;Subtract Funds</a>
+      </div>
     </div>
 
     <div class="transactions">
-      <table>
-        <thead>
-          <th>Transaction</th>
-          <th>Amount</th>
-        </thead>
-        <tbody id="tbody">
-          
-        </tbody>
-      </table>
+      <div class="card">
+        <table>
+          <thead>
+            <th>Transaction</th>
+            <th>Amount</th>
+          </thead>
+          <tbody id="tbody" style="text-align: center;">
+          </tbody>
+        </table>
+      </div>
     </div>
-    
+
     <canvas id="myChart"></canvas>
   </div>
 
@@ -46,8 +62,8 @@
   <script src="db.js"></script>
   <script src="index.js"></script>
   <script type="text/javascript">
-    (function() {
-      if("serviceWorker" in navigator) {
+    (function () {
+      if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("./service-worker.js", {
           scope: "http://localhost:3000"
         })
@@ -60,4 +76,5 @@
     })();
   </script>
 </body>
+
 </html>
