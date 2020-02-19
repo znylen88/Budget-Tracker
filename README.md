@@ -1,6 +1,6 @@
 # Budget-Tracker
 
-![App Function] (https://github.com/znylen88/Budget-Tracker/blob/master/Budget-Tracker.png)
+![App Function](https://github.com/znylen88/Budget-Tracker/blob/master/Budget-Tracker.png)
 
 # Unit 18 PWA Homework: Online/Offline Budget Trackers
 
