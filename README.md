@@ -1,5 +1,7 @@
 # Budget-Tracker
 
+![App Function] (https://github.com/znylen88/Budget-Tracker/blob/master/Budget-Tracker.png)
+
 # Unit 18 PWA Homework: Online/Offline Budget Trackers
 
 Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
